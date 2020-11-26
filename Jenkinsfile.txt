@@ -34,12 +34,11 @@ pipeline {
                         agent {
                                 docker {
                                         reuseNode false
-					image 'ubuntu'
+		        image 'ubuntu'
                                         }
-			}
-				steps {
-					echo 'Running the integration test..'
-				}
+	         }
+		steps {					                                         echo 'Running the integration test..'
+                                     }
                                
 			}  }
         }
